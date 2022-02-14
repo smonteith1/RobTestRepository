@@ -1,0 +1,69 @@
+C:\Users\GL2221\Downloads\curl-7.81.0-win64-mingw\curl-7.81.0-win64-mingw\bin>curl -v https://elastic.snaplogic.com
+*   Trying 52.11.8.103:443...
+* Connected to elastic.snaplogic.com (52.11.8.103) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+*  CAfile: C:\Users\GL2221\Downloads\curl-7.81.0-win64-mingw\curl-7.81.0-win64-mingw\bin\curl-ca-bundle.crt
+*  CApath: none
+* TLSv1.0 (OUT), TLS header, Certificate Status (22):
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+* TLSv1.2 (OUT), TLS header, Certificate Status (22):
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+* TLSv1.2 (OUT), TLS header, Finished (20):
+* TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.2 (OUT), TLS header, Certificate Status (22):
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+* TLSv1.2 (IN), TLS header, Finished (20):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: OU=Domain Control Validated; CN=*.elastic.snaplogic.com
+*  start date: Mar 21 11:17:43 2020 GMT
+*  expire date: May 20 08:17:00 2022 GMT
+*  subjectAltName: host "elastic.snaplogic.com" matched cert's "elastic.snaplogic.com"
+*  issuer: C=US; ST=Arizona; L=Scottsdale; O=GoDaddy.com, Inc.; OU=http://certs.godaddy.com/repository/; CN=Go Daddy Secure Certificate Authority - G2
+*  SSL certificate verify ok.
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+> GET / HTTP/1.1
+> Host: elastic.snaplogic.com
+> User-Agent: curl/7.81.0
+> Accept: */*
+>
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 302 Moved Temporarily
+< Server: nginx
+< Date: Mon, 07 Feb 2022 14:00:10 GMT
+< Content-Type: text/html
+< Content-Length: 154
+< Connection: keep-alive
+< Location: https://elastic.snaplogic.com/sl/designer.html
+< X-Frame-Options: DENY
+< Content-Security-Policy: frame-ancestors 'none'
+< X-Content-Type-Options: nosniff
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: DENY
+< Content-Security-Policy: frame-ancestors 'none'
+< X-Content-Type-Options: nosniff
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< X-XSS-Protection: 1; mode=block
+<
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+* Connection #0 to host elastic.snaplogic.com left intact
